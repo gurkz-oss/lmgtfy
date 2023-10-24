@@ -1,5 +1,16 @@
 {
     "name": "@gurkz/lmgtfy",
     "description": "let me google that for you javascript package",
-    "license": "MIT"
+    "license": "MIT",
+    "main": "dist/main.js",
+    "module": "dist/main.mjs",
+    "types": "dist/main.d.ts",
+    "scripts": {
+        "build": "tsup src/main.ts --format cjs,esm --dts",
+        "lint": "tsc"
+    },
+    "devDependencies": {
+        "tsup": "^7.2.0",
+        "typescript": "^5.2.2"
+    }
 }
