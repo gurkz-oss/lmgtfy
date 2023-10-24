@@ -1,3 +1,1 @@
-export function hello() {
-  return "hello";
-}
+// nothing here yet
